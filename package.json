@@ -1,0 +1,17 @@
+{
+  "name": "openaedeu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx @11ty/eleventy --input=./src --output=docs --serve --port=8082",
+    "build": "npx @11ty/eleventy --input=./src --output=docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "openaed",
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
