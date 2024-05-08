@@ -3,4 +3,31 @@ layout: index.njk
 title: Home
 ---
 
-<h1>Welkom</h1>
+<ul id="posts-container" class="list-unstyled">
+
+</ul>
+
+<script>
+    fetch(
+            'https://blog.openaed.nl/ghost/api/content/posts/?key=17ef0ea91b5076cd4d29a48113&limit=5&order=published_at%20desc&include=tags&filter=tag:news'
+        )
+        .then(response => response.json())
+        .then(data => {
+            const postsContainer = document.getElementById('posts-container');
+            data.posts.forEach(post => {
+                const postElement = document.createElement('li');
+                postElement.classList.add('blog-post');
+                postElement.innerHTML = `
+                    <h2 class="text-green">${post.title}</h2>
+                    <small>${new Date(post.published_at).toLocaleDateString()}</small>
+                    <p>${post.excerpt ?? ""}</p>
+                    <a target="_blank" href="${post.url}">Read more&nbsp;<i class="bi bi-box-arrow-up-right"></i></a>
+                `;
+                postsContainer.appendChild(postElement);
+            });
+
+            if (data.posts.length === 0) {
+                postsContainer.innerHTML = '<p>No posts found.</p>';
+            }
+        });
+</script>
