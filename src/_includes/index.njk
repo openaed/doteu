@@ -147,6 +147,8 @@ title: OpenAED
                 postElement.appendChild(postLink);
                 postsContainer.appendChild(postElement);
             });
+            if (data.posts.length === 0)
+                postsContainer.innerHTML = '<p>No links right now.</p>';
         });
 </script>
 

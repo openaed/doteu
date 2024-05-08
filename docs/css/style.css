@@ -9,6 +9,15 @@ a {
   color: #009a3b !important;
 }
 
+.text-green {
+  color: #009a3b;
+}
+
+.blog-post:not(:first-child):not(:last-child) {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+}
+
 h1 {
   color: #494949 !important;
   font-weight: bold !important;

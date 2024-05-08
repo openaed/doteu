@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
+    <link rel="shortcut icon" href="/assets/icon.png" type="image/png">
+
     <script src="/js/bootstrap.bundle.min.js" defer></script>
 </head>
 
@@ -101,7 +103,7 @@
                     OpenAED
                     helps finance local AED fundraisers.</p>
 
-                <br><br>
+                <br>
 
                 <h5>Your attention, please</h5>
                 <hr>
@@ -109,7 +111,7 @@
 
                 </ul>
 
-                <br><br>
+                <br>
 
                 <h5>Links</h5>
                 <hr>
@@ -154,5 +156,30 @@
         </div>
     </div>
 </footer>
+
+<script>
+    fetch(
+            'https://blog.openaed.nl/ghost/api/content/posts/?key=17ef0ea91b5076cd4d29a48113&limit=5&order=published_at%20desc&include=tags&filter=tags:attention-please'
+        )
+        .then(response => response.json())
+        .then(data => {
+            const postsContainer = document.getElementById('attentionlist');
+            data.posts.forEach(post => {
+                if (post.primary_tag.slug != 'attention-please')
+                    return;
+
+                const postElement = document.createElement('li');
+                const postLink = document.createElement('a');
+                postLink.href = post.excerpt;
+                postLink.target = '_blank';
+                postLink.classList.add('text-black', 'text-decoration-none');
+                postLink.innerHTML = post.title + '&nbsp;<i class="bi bi-box-arrow-up-right"></i>';
+                postElement.appendChild(postLink);
+                postsContainer.appendChild(postElement);
+            });
+            if (data.posts.length === 0)
+                postsContainer.innerHTML = '<p>No links right now.</p>';
+        });
+</script>
 
 </html>
