@@ -76,8 +76,9 @@
             data.posts.forEach(post => {
 
                 if (post.excerpt) {
+                    const isLonger = post.excerpt.length > 150;
                     post.excerpt = post.excerpt.substring(0, 150);
-                    post.excerpt += post.excerpt.length > 150 ? '...' : '';
+                    post.excerpt += isLonger ? '...' : '';
                 }
 
                 const postElement = document.createElement('li');
