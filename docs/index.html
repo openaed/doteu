@@ -74,6 +74,12 @@
         .then(data => {
             const postsContainer = document.getElementById('posts-container');
             data.posts.forEach(post => {
+
+                if (post.excerpt) {
+                    post.excerpt = post.excerpt.substring(0, 150);
+                    post.excerpt += post.excerpt.length > 150 ? '...' : '';
+                }
+
                 const postElement = document.createElement('li');
                 postElement.classList.add('blog-post');
                 postElement.innerHTML = `
