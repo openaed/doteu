@@ -1,0 +1,58 @@
+.sidebar-menu {
+    display: grid;
+    grid-template-columns: auto;
+    color: white;
+}
+
+.sidebar-menu .menu-item {
+    padding: 0.5em 1em;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sidebar-menu .menu-item.active {
+    border-bottom: 1px solid #fff;
+}
+
+.sidebar-menu .menu-item:hover {
+    background-color: #ffffff1f;
+}
+
+.sidebar-menu .menu-item:not(:last-child):not(.active) {
+    border-bottom: 1px solid #ffffff1f;
+}
+
+.fs-xl {
+    font-size: 5em;
+}
+
+.company-index-logo {
+    width: 3rem;
+    object-fit: cover;
+}
+
+.project-index-image {
+    width: 10rem;
+    object-fit: cover;
+}
+
+.setting-image {
+    width: 4rem;
+    object-fit: cover;
+}
+
+label.required::after {
+    content: "*";
+    color: #800000;
+    margin-left: 0.2em;
+}
+
+.admin-post {
+    border-bottom: 1px solid #0000001f;
+    padding: 1rem;
+}
+
+.admin-post:hover {
+    background-color: #f3f3f3;
+    cursor: pointer;
+}

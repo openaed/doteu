@@ -1,0 +1,86 @@
+@scope (body.public) {
+    :scope {
+        background-color: #efeee7;
+    }
+
+    .text-aed-green {
+        color: #008954;
+    }
+
+    #lang-switch {
+        min-width: 6em;
+        user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        max-width: fit-content;
+        float: left;
+    }
+
+    .lang-switch-container {
+        padding: 0.5em 1em;
+
+        background-color: #fff;
+        border-radius: 2.5em;
+    }
+
+    .lang-switch-container .current img {
+        max-width: 1.5rem;
+    }
+
+    .lang-switch-container:hover {
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .lang-dropdown {
+        background-color: #fff;
+        border-radius: var(--bs-border-radius-xxl);
+        border: none;
+        overflow: hidden;
+    }
+
+    .lang-dropdown li {
+        padding: 0.5em 1em;
+    }
+
+    .lang-dropdown li img {
+        max-width: 1.5rem;
+    }
+
+    .lang-dropdown li:hover {
+        background-color: #eee;
+    }
+
+    .bg-aed-header {
+        background-position: right;
+        background-size: cover;
+        min-height: 20rem;
+    }
+
+    .hero-button {
+        background-color: #fff;
+        text-align: center;
+        color: #000;
+    }
+
+    .hero-button a {
+        text-decoration: none;
+    }
+
+    .hero-button:hover {
+        background-color: #009a3b;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .hero-button:hover i {
+        color: #fff;
+    }
+
+    .bg-what-is-aed {
+        background-position: top;
+        background-size: cover;
+        min-height: 20rem;
+    }
+}

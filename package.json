@@ -1,17 +1,15 @@
 {
-  "name": "openaedeu",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "serve": "npx @11ty/eleventy --input=./src --output=docs --serve --port=8082",
-    "build": "npx @11ty/eleventy --input=./src --output=docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "openaed",
-  "license": "GPL-2.0",
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
-  }
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "axios": "^1.6.4",
+        "jquery": "^3.7.1",
+        "laravel-vite-plugin": "^1.0",
+        "select2": "^4.1.0-rc.0",
+        "vite": "^5.0"
+    }
 }

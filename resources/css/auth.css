@@ -1,0 +1,14 @@
+.container.auth {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card.auth {
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+    border-radius: 0.75em;
+    box-shadow: 0 0 1em #0000001a;
+    background-color: white;
+}
