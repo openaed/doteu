@@ -73,7 +73,7 @@
                     </div>
                 @endforeach
             </div>
-            @unless (count($posts) == 0)
+            @unless (count($posts) >= 3)
                 <div class="text-center">
                     <a href="#" class="btn btn-light">{{ __('pages/home.view-all-posts') }}</a>
                 </div>
