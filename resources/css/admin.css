@@ -56,3 +56,7 @@ label.required::after {
     background-color: #f3f3f3;
     cursor: pointer;
 }
+
+input[disabled]:hover {
+    cursor: not-allowed;
+}

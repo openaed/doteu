@@ -14,6 +14,7 @@ return [
     'latest-posts' => 'Seneste indlæg',
     'read-more' => 'Læs mere',
     'view-all-posts' => 'Se alle indlæg',
+    'no-posts' => 'Der er ingen indlæg at vise.',
 
     'what-is-aed-text' => 'En automatisk ekstern defibrillator (AED) er en bærbar enhed, der kontrollerer hjerterytmen og kan sende et elektrisk stød til hjertet for at forsøge at genoprette en normal rytme. AED\'er bruges til at behandle pludseligt hjertestop. Pludselig hjertestop er en tilstand, hvor hjertet pludseligt og uventet holder op med at slå. Når dette sker, stopper blodet med at strømme til hjernen og andre vitale organer. Pludselig hjertestop er normalt fatalt, hvis det ikke behandles inden for få minutter. Faktuelt reducerer et hvert minuts ventetid forsinkelse chancerne for at overleve med 7 til 10 procent.
     <br><br>

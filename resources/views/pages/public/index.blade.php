@@ -77,6 +77,8 @@
                 <div class="text-center">
                     <a href="#" class="btn btn-light">{{ __('pages/home.view-all-posts') }}</a>
                 </div>
+            @else
+                <p>{{ __('pages/home.no-posts') }}</p>
             @endunless
         </section>
 

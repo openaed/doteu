@@ -14,6 +14,7 @@ return [
     'latest-posts' => 'Neueste Beiträge',
     'read-more' => 'Mehr lesen',
     'view-all-posts' => 'Alle Beiträge anzeigen',
+    'no-posts' => 'Es gibt keine Beiträge zum Anzeigen.',
 
     'what-is-aed-text' => 'Ein automatisierter externer Defibrillator (AED) ist ein tragbares Gerät, das den Herzrhythmus überprüft und einen elektrischen Schock an das Herz senden kann, um zu versuchen, einen normalen Rhythmus wiederherzustellen. AEDs werden zur Behandlung eines plötzlichen Herzstillstands eingesetzt. Ein plötzlicher Herzstillstand ist ein Zustand, bei dem das Herz plötzlich und unerwartet aufhört zu schlagen. Wenn dies passiert, hört das Blut auf, zum Gehirn und anderen lebenswichtigen Organen zu fließen. Ein plötzlicher Herzstillstand ist in der Regel tödlich, wenn er nicht innerhalb von Minuten behandelt wird. Tatsächlich reduziert jede Minute Verzögerung die Überlebenschancen um 7 bis 10 Prozent.
     <br><br>

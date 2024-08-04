@@ -14,6 +14,7 @@ return [
     'latest-posts' => 'Laatste berichten',
     'read-more' => 'Lees meer',
     'view-all-posts' => 'Bekijk alle berichten',
+    'no-posts' => 'Er zijn geen berichten om weer te geven.',
 
     'what-is-aed-text' => 'Een automatische externe defibrillator (AED) is een draagbaar apparaat dat het hartritme controleert en een elektrische schok naar het hart kan sturen om te proberen een normaal ritme te herstellen. AEDs worden gebruikt om een hartstilstand te behandelen. Een hartstilstand is een aandoening waarbij het hart plotseling en onverwacht stopt met kloppen. Als dit gebeurt, stopt het bloed met stromen naar de hersenen en andere vitale organen. Een hartstilstand is meestal dodelijk als deze niet binnen enkele minuten wordt behandeld. Sterker nog, elke minuut vertraging vermindert de overlevingskansen met 7 tot 10 procent.
     <br><br>

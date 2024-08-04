@@ -22,7 +22,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.admin.posts.create');
     }
 
     /**
@@ -30,15 +30,27 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $attributes = $request->validate([
+            'title' => 'required|string',
+            'slug' => 'required|string',
+            'content' => 'required|string',
+            'image' => 'nullable|image',
+        ]);
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Post $post)
-    {
-        //
+
+        if ($request->hasFile('image')) {
+            $attributes['image'] = $request->file('image')->store('images');
+        }
+
+        Post::create([
+            'title' => $attributes['title'],
+            'slug' => $attributes['slug'],
+            'content' => $attributes['content'],
+            'image' => $attributes['image'] ?? null,
+            'user_id' => auth()->user()->id,
+        ]);
+
+        return redirect()->route('admin.posts.index');
     }
 
     /**
@@ -46,7 +58,9 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        //
+        return view('pages.admin.posts.edit', [
+            'post' => $post,
+        ]);
     }
 
     /**
@@ -54,7 +68,23 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+        $attributes = $request->validate([
+            'title' => 'required|string',
+            'content' => 'required|string',
+            'image' => 'nullable|image',
+        ]);
+
+        if ($request->hasFile('image')) {
+            $attributes['image'] = $request->file('image')->store('images');
+        }
+
+        $post->update([
+            'title' => $attributes['title'],
+            'content' => $attributes['content'],
+            'image' => $attributes['image'] ?? $post->image,
+        ]);
+
+        return redirect()->route('admin.posts.index');
     }
 
     /**
@@ -62,6 +92,8 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        //
+        $post->delete();
+
+        return redirect()->route('admin.posts.index');
     }
 }

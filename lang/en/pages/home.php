@@ -14,6 +14,7 @@ return [
     'latest-posts' => 'Latest posts',
     'read-more' => 'Read more',
     'view-all-posts' => 'View all posts',
+    'no-posts' => 'There are no posts to display.',
 
     'what-is-aed-text' => 'An automated external defibrillator (AED) is a portable device that checks the heart rhythm and can send an electric shock to the heart to try to restore a normal rhythm. AEDs are used to treat sudden cardiac arrest. Sudden cardiac arrest is a condition in which the heart suddenly and unexpectedly stops beating. If this happens, blood stops flowing to the brain and other vital organs. Sudden cardiac arrest is usually fatal if not treated within minutes. In fact, each minute of delay reduces the chances of survival by 7 to 10 percent.
     <br><br>
