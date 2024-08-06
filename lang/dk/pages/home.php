@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'meta-description' => 'OpenAED arbejder på et kort over alle AED\'er i Europa. Dette kort er tilgængeligt for alle og kan bruges til at finde den nærmeste AED i nødsituationer.',
+
     'hero-title' => 'Alle AED\'er på ét kort.',
     'hero-subtitle' => 'Det er målet.',
     'hero-text' => 'Ved hjælp af crowdsourced information fra OpenStreetMap arbejder OpenAED på et kort over alle AED\'er i Europa. Dette kort er tilgængeligt for alle og kan bruges til at finde den nærmeste AED i nødsituationer*.

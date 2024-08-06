@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'meta-description' => 'OpenAED is een crowdsourced kaart van alle AEDs in Europa. Vind de dichtstbijzijnde AED in geval van nood en leer meer over reanimatie.',
+
     'hero-title' => 'Alle AEDs op één kaart.',
     'hero-subtitle' => 'Dat is het doel.',
     'hero-text' => 'Met behulp van crowdsourced informatie van OpenStreetMap werkt OpenAED aan een kaart van alle AEDs in Europa. Deze kaart is beschikbaar voor iedereen om te gebruiken, en kan worden gebruikt om de dichtstbijzijnde AED te vinden in geval van een noodgeval*.

@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'meta-description' => 'OpenAED is a project that aims to map all AEDs in Europe. Using crowdsourced information from OpenStreetMap, OpenAED is working on a map of all AEDs in Europe.',
+
     'hero-title' => 'All AEDs on one map.',
     'hero-subtitle' => 'That\'s the goal.',
     'hero-text' => 'Using crowdsourced information from OpenStreetMap, OpenAED is working on a map of all AEDs in Europe. This map is available for everyone to use, and can be used to find the nearest AED in case of an emergency*.

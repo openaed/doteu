@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'meta-description'=> 'OpenAED ist eine Karte aller AEDs in Europa. Finden Sie den nächstgelegenen AED und lernen Sie, wie Sie Leben retten können.',
+
     'hero-title' => 'Alle AEDs im Überblick.',
     'hero-subtitle' => 'Das ist das Ziel.',
     'hero-text' => 'Mit Hilfe von crowdsourced Informationen von OpenStreetMap arbeitet OpenAED an einer Karte aller AEDs in Europa. Diese Karte ist für jeden verfügbar und kann verwendet werden, um im Notfall den nächstgelegenen AED zu finden*.

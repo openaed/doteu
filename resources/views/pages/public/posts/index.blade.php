@@ -2,6 +2,15 @@
 
 @section('title', __('Posts'))
 
+@push('meta')
+    <meta name="description" content="{{ __('pages/posts.meta-description') }}">
+    <meta property="og:title" content="{{ __('Posts') }}">
+    <meta property="og:description" content="{{ __('pages/posts.meta-description') }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ route('posts.index') }}">
+    <meta property="og:image" content="{{ asset('assets/branding/openaed_Logo.svg') }}">
+@endpush
+
 @section('content')
     <div class="container">
         <h1>{{ __('Posts') }}</h1>
