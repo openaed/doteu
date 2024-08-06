@@ -31,6 +31,7 @@ return [
     'how-can-i-help-tell-others-title' => 'Vertel anderen',
     'how-can-i-help-tell-others-text' => 'Vertel je collega\'s, vrienden en familie over reanimatie en het gebruik van AEDs. Vertel hen over het belang van weten hoe te handelen in geval van nood. Burgerinterventie is de eerste stap om levens te redden.',
 
+    'newsletter' => 'Nieuwsbrief',
     'newsletter-title' => 'Blijf op de hoogte',
     'newsletter-subtitle' => 'Meld je aan voor onze nieuwsbrief en ontvang updates over OpenAED, AEDs en reanimatie. Geen zorgen, we spammen niet.',
     'email' => 'E-mailadres',

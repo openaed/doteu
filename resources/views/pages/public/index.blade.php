@@ -30,9 +30,9 @@
                             <i class="bi bi-map fs-1 text-aed-green"></i>
                             <p>{{ __('pages/home.to-map') }}</p>
                         </div>
-                        <div class="col hero-button px-5 py-4" onclick="">
-                            <i class="bi bi-question fs-1 text-aed-green"></i>
-                            <p>{{ __('pages/home.to-map') }}</p>
+                        <div class="col hero-button px-5 py-4" onclick="window.location.href = '#newsletter'">
+                            <i class="bi bi-newspaper fs-1 text-aed-green"></i>
+                            <p>{{ __('pages/home.newsletter') }}</p>
                         </div>
                     </div>
                 </div>

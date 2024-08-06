@@ -30,6 +30,7 @@ return [
     'how-can-i-help-tell-others-title' => 'Informeren Sie anderen',
     'how-can-i-help-tell-others-text' => 'Informeren Sie Ihren Kollegen, Freunden und Ihrer Familie von der Wichtigkeit, zu wissen wie zu handeln ist, wenn ein Notfall eintritt. Die zivile Intervention ist der erste Schritt, um Leben zu retten.',
 
+    'newsletter' => 'Newsletter',
     'newsletter-title' => 'Bleiben Sie informiert',
     'newsletter-subtitle' => 'Melden Sie sich für unseren Newsletter an und erhalten Sie Updates über OpenAED, AEDs und Wiederbelebung. Keine Sorge, wir spammen nicht.',
     'email' => 'E-Mail-Adresse',
