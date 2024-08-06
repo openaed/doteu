@@ -29,4 +29,12 @@ return [
 
     'how-can-i-help-tell-others-title' => 'Tell others',
     'how-can-i-help-tell-others-text' => 'Spread the word about resuscitation and the use of AEDs. Tell your colleagues, friends and family about the importance of knowing how to act in case of an emergency. Civillian intervention is the first step in saving lives.',
+
+    'newsletter-title' => 'Stay informed',
+    'newsletter-subtitle' => 'Sign up for our newsletter and receive updates about OpenAED, AEDs and resuscitation. Don\'t worry, we don\'t spam.',
+    'email' => 'Email address',
+    'subscribe' => 'Subscribe',
+
+    'newsletter-error' => 'Something went wrong while signing up for the newsletter. Please try again.',
+    'newsletter-success' => 'Thank you for signing up for the newsletter!',
 ];

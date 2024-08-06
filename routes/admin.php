@@ -2,8 +2,8 @@
 
 use App\Http\Middleware\IsLoggedIn;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PostController;
-use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Admin\PostController;
+use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Auth\LoginController;
 
 Route::group(['middleware' => ['web', IsLoggedIn::class]], function () {

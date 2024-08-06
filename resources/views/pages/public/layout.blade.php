@@ -20,7 +20,10 @@
     <div class="container mt-3">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand fs-2 fw-bold" href="{{ route('home') }}">OpenAED</a>
+                <a class="navbar-brand fs-2 fw-bold" href="{{ route('home') }}">
+                    <img src="/assets/branding/openaed_Woordmerk.svg" alt="OpenAED logo" height="75"
+                        class="user-select-none">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -64,7 +67,7 @@
         <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
             <div class="col mb-3">
                 <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                    <img src="/assets/logo.png" alt="OpenAED logo" height="50">
+                    <img src="/assets/branding/openaed_Woordmerk.svg" alt="OpenAED logo" height="75">
                 </a>
                 <p class="text-body-secondary">© 2024</p>
             </div>

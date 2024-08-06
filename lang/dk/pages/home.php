@@ -29,4 +29,12 @@ return [
 
     'how-can-i-help-tell-others-title' => 'Fortæl andre',
     'how-can-i-help-tell-others-text' => 'Fortæl dine kollegaer, venner og familie om vigtigheden af ​​at vide, hvad de skal gøre, hvis der opstår en nødsituation. Civil intervention er det første skridt til at redde liv.',
+
+    'newsletter-title' => 'Hold dig informeret',
+    'newsletter-subtitle' => 'Tilmeld dig vores nyhedsbrev og modtag opdateringer om OpenAED, AED\'er og genoplivning. Bare rolig, vi spammer ikke.',
+    'email' => 'Email adresse',
+    'subscribe' => 'Tilmeld',
+
+    'newsletter-error' => 'Noget gik galt under tilmeldingen til nyhedsbrevet. Prøv igen.',
+    'newsletter-success' => 'Tak for at tilmelde dig nyhedsbrevet!',
 ];

@@ -104,5 +104,24 @@
                 </div>
             </div>
         </section>
+
+        <section id="newsletter">
+            <h2 class="mt-5 text-center">{{ __('pages/home.newsletter-title') }}</h2>
+            <p class="text-center">{{ __('pages/home.newsletter-subtitle') }}</p>
+            <form action="{{ route('newsletter.signup') }}" method="POST" class="row justify-content-center">
+                @csrf
+                <div class="col-12 col-md-6">
+                    <div class="input-group mb-3">
+                        <input type="email" name="email" class="form-control bg-light"
+                            placeholder="{{ __('pages/home.email') }}" aria-label="{{ __('pages/home.email') }}" required>
+                        <button class="btn btn-primary" type="submit">{{ __('pages/home.subscribe') }}</button>
+                    </div>
+                </div>
+
+                @if (session('newsletter'))
+                    <p class="text-center">{{ Session::get('newsletter') }}</p>
+                @endif
+            </form>
+        </section>
     </div>
 @endsection
