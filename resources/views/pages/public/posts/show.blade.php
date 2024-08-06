@@ -24,8 +24,8 @@
             {{ $post->created_at->isoFormat('LL') }}
         </small>
 
-        <p class="text-center">
-            {!! $post->content !!}
-        </p>
+        <div class="text-center">
+            @markdown($post->content)
+        </div>
     </div>
 @endsection

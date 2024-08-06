@@ -34,10 +34,14 @@ class Post extends Model
      */
     public function excerpt($length = 30)
     {
-        if($length > strlen($this->content)) {
-            return $this->content;
+        // Remove any Markdown syntax from the content, like #, ##, **, etc.
+        $content = $this->content;
+        $content = removeMarkdown($content);
+
+        if($length > strlen($content)) {
+            return $content;
         }
 
-        return trim(substr($this->content, 0, $length - 3)) . '...';
+        return trim(substr($content, 0, $length - 3)) . '...';
     }
 }
