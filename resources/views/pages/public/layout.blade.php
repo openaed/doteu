@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl" data-bs-theme="light">
+<html lang="{{ app()->getLocale() }}" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -40,7 +40,7 @@
                     </ul>
                     <div id="lang-switch" class="d-flex ms-auto lang-switch-container">
                         <div class="dropdown">
-                            <div class="current text-nowrap" type="button" data-bs-toggle="dropdown">
+                            <div class="current text-nowrap" data-bs-toggle="dropdown">
                                 <img src="/assets/flags/{{ app()->getLocale() }}.svg" alt="Language flag">
                                 <span class="text-uppercase">{{ app()->getLocale() }}</span>
                                 <i class="bi bi-caret-down-fill"></i>
