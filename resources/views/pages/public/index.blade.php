@@ -62,8 +62,8 @@
         </section>
 
         <section id="posts">
-            <h2 class="mt-5">{{ __('pages/home.latest-posts') }}</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <h2 class="mt-5 text-center">{{ __('pages/home.latest-posts') }}</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
                 @foreach ($posts as $post)
                     <x-public.post-card :post="$post" />
                 @endforeach
@@ -73,7 +73,7 @@
                     <a href="#" class="btn btn-light">{{ __('pages/home.view-all-posts') }}</a>
                 </div>
             @elseif(count($posts) == 0)
-                <p>{{ __('pages/home.no-posts') }}</p>
+                <p class="text-center">{{ __('pages/home.no-posts') }}</p>
             @endunless
         </section>
 
