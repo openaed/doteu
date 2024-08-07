@@ -101,6 +101,20 @@
                             class="nav-link p-0 text-body-secondary">Server status</a></li>
                 </ul>
             </div>
+
+            <div class="col mb-3">
+                <h5>{{ __('Contact') }}</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <i class="bi bi-envelope d-inline"></i> <a href="mailto:info@openaed.eu"
+                            class="nav-link p-0 text-body-secondary d-inline">info@openaed.eu</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <i class="bi bi-github d-inline"></i> <a href="https://github.com/openaed"
+                            class="nav-link p-0 text-body-secondary d-inline">@openaed</a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </div>
 
